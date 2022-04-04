@@ -3,7 +3,7 @@ const { clipboard } = require('electron')
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const HelpTab = () => {
-  
+
   const [copiedText, setCopiedText] = useState('');
   const topic = 'docker exec -it kafka101 \
   kafka-topics \
@@ -30,7 +30,7 @@ const HelpTab = () => {
 
   return (
     <div>
-      <h1>HelpTab</h1>
+      <h1>Quick Start</h1>
       <h3>Create a Topic:</h3>
       <div class="codeblock">
         <span class="code" value={topic} >$ docker exec -it kafka101 \ <br></br>
