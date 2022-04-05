@@ -1,0 +1,1 @@
+{"version":3,"file":"Settings.js","sourceRoot":"","sources":["../../../src/components/Settings.jsx"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAAA,+CAAyC;AAEzC,MAAM,QAAS,SAAQ,iBAAS;IAC9B;QACE,KAAK,EAAE,CAAC;IACV,CAAC;IAED,iBAAiB;QACf,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC;IACpB,CAAC;IAED,MAAM;QACJ,OAAO,CACL;YACE,qDAAiB,CACb,CACP,CAAC;IACJ,CAAC;CACF;AAED,kBAAe,QAAQ,CAAC"}

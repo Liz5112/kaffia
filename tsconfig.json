@@ -3,11 +3,13 @@
     "target": "es6",
     "esModuleInterop": true,
     "jsx": "react",
-    "module": "CommonJS",
+    // "module": "CommonJS",
+    "module": "commonjs",
     "moduleResolution": "Node",
     "allowJs": true,
     "sourceMap": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "outDir": "build",
   },
   "include": ["app/*", "configs/*", "src/**/*", "electron.ts"]
 }

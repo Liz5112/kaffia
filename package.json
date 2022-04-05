@@ -2,7 +2,7 @@
   "name": "kaffia",
   "version": "1.0.0",
   "description": "Apache Kafka visualization and deployment app",
-  "main": "electron.js",
+  "main": "electron.ts",
   "scripts": {
     "electron": "cross-env NODE_ENV=production electron .",
     "build": "webpack",
@@ -49,6 +49,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "devDependencies": {
+    "@types/node": "^17.0.23",
     "@types/react-copy-to-clipboard": "^5.0.2"
   }
 }

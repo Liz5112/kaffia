@@ -8,6 +8,7 @@ const PopupWindow = require('./app/PopupWindow.jsx');
 const MetricTray = require('./app/MetricTray.jsx');
 
 let mainWindow;
+let popupWindow;
 let tray;
 
 app.on('ready', () => {

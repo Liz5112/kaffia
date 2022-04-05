@@ -1,15 +1,24 @@
-const path = require('path');
-const { app, ipcMain, Menu } = require('electron');
-const { exec } = require('child_process');
-const configGenerator = require('./configs/configGenerator.ts');
+// const path = require('path');
+// import path from 'path';
+// import * as path from 'path';
+// import module from 'path';
+// import  { app, ipcMain, Menu }  from 'electron';
+// import  { exec } from 'child_process';
+// import * as configGenerator from './configs/configGenerator';
+import { app, ipcMain, Menu } from 'electron';
+import { exec } from 'child_process';
+import configGenerator from './configs/configGenerator.js';
 
-const MainWindow = require('./app/MainWindow.jsx');
-const PopupWindow = require('./app/PopupWindow.jsx');
-const MetricTray = require('./app/MetricTray.jsx');
+import MainWindow from './app/MainWindow.jsx';
+import PopupWindow from './app/PopupWindow.jsx';
+import MetricTray from './app/MetricTray.jsx';
+// const MainWindow = require('./app/MainWindow.jsx');
+// const PopupWindow = require('./app/PopupWindow.jsx');
+// const MetricTray = require('./app/MetricTray.jsx');
 
 let mainWindow: null | typeof MainWindow;
-let tray: null | typeof MetricTray;
 let popupWindow: null | typeof PopupWindow;
+let tray: null | typeof MetricTray;
 
 app.on('ready', () => {
   // creates main electron window using menu from template below

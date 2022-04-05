@@ -1,6 +1,10 @@
-const yaml = require('js-yaml');
-const fs = require('fs');
 // const path = require('path');
+import * as path from 'path';
+// import module from 'path';
+const yaml = require('js-yaml');
+// const yaml = require('js-yaml');
+const fs = require('fs');
+// const fs = require('fs');
 
 /**
  * dockerConfigGenerator creates a yaml file for a multi-container Docker application
