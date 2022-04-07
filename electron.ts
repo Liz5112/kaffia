@@ -16,13 +16,14 @@ import MetricTray from './app/MetricTray.jsx';
 // const PopupWindow = require('./app/PopupWindow.jsx');
 // const MetricTray = require('./app/MetricTray.jsx');
 
+// let mainWindow: prototype;
 let mainWindow: null | typeof MainWindow;
 let popupWindow: null | typeof PopupWindow;
 let tray: null | typeof MetricTray;
 
 app.on('ready', () => {
   // creates main electron window using menu from template below
-  mainWindow = new MainWindow(`file://${__dirname}/src/index.html`);
+  mainWindow= new MainWindow(`file://${__dirname}/src/index.html`);
   const mainMenu = Menu.buildFromTemplate(menuTemplate);
   Menu.setApplicationMenu(mainMenu);
   mainWindow.on('show', () => {
