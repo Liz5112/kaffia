@@ -1,4 +1,5 @@
 const yaml = require('js-yaml');
+import * as path from 'path';
 const fs = require('fs');
 
 const grafanaPanels = require('./grafana/templates/panels_template.js');
