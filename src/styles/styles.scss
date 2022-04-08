@@ -1,14 +1,6 @@
-.codeblock {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(32, 32, 87);
-  // background-color: #565656;
-  border-radius: 7px; 
-}
-
 .copyButton {
   position: absolute;
-  right: 0;
+  right: 3;
   text-align: center;
   margin: 10px;
   border-radius: 5px;
@@ -24,5 +16,8 @@
 }
 
 .code {
-  margin: 20px;
+  padding: 10px;
+  background-color: #565656;
+  border-radius: 4px; 
+  margin: 7px;
 }
