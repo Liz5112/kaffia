@@ -8,7 +8,9 @@
     "build": "webpack",
     "dev": "concurrently \"cross-env NODE_ENV=development electron .\" \"cross-env NODE_ENV=development webpack-dev-server\"",
     "dev-server": "cross-env NODE_ENV=development webpack-dev-server",
-    "dev-app": "cross-env NODE_ENV=development electron ."
+    "dev-app": "cross-env NODE_ENV=development electron .",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -51,6 +53,9 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "@types/react-copy-to-clipboard": "^5.0.2"
+    "@types/react-copy-to-clipboard": "^5.0.2",
+    "eslint": "^8.12.0",
+    "eslint-plugin-react": "^7.29.4",
+    "lint": "^0.7.0"
   }
 }
