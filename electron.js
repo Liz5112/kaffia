@@ -10,7 +10,6 @@ const MetricTray = require('./app/MetricTray.jsx');
 let mainWindow;
 let popupWindow;
 let tray;
-let popupWindow;
 
 app.on('ready', () => {
   // creates main electron window using menu from template below
