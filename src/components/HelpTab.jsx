@@ -36,8 +36,8 @@ const HelpTab = () => {
     <><div>
       <h1>Quick Start</h1>
       <Grid container spacing={2}>
+        <h3>Create a Topic:</h3>
         <Grid item xs={20} md={12} key={1} className="codeblock">
-          <h3>Create a Topic:</h3>
           <CopyToClipboard text={copiedText}>
             <button type="button" id="topic" className="copyButton" onClick={e => setCopiedText(topic)}>Copy</button>
           </CopyToClipboard>
@@ -50,8 +50,8 @@ const HelpTab = () => {
             --bootstrap-server kafka101:29092<br></br>
           </Card>
         </Grid>
+        <h3>Produce messages:</h3>
         <Grid item xs={20} md={12} key={2} className="codeblock">
-          <h3>Produce messages:</h3>
           <CopyToClipboard text={copiedText}>
             <button type="button" id="producer" className="copyButton" onClick={e => setCopiedText(producer)}>Copy</button>
           </CopyToClipboard>
@@ -64,8 +64,8 @@ const HelpTab = () => {
             --producer-props bootstrap.servers=kafka101:29092<br></br>
           </Card>
         </Grid>
+        <h3>Consume messages:</h3>
         <Grid item xs={20} md={12} key={3} className="codeblock">
-          <h3>Consume messages:</h3>
           <CopyToClipboard text={copiedText}>
             <button type="button" id="consumer" className="copyButton" onClick={e => setCopiedText(consumer)}>Copy</button>
           </CopyToClipboard>
